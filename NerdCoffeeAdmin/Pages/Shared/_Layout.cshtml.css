@@ -1,0 +1,47 @@
+﻿footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer img {
+    max-width: 100%;
+}
+
+.footer p {
+    margin-bottom: 5px;
+}
+
+.footer-pic {
+    position: relative;
+}
+
+.footer-pic img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.footer-pic p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Adicione essas regras para a navbar */
+.navbar {
+    background-color: #1b6ec2;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: #fff;
+}

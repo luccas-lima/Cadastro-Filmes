@@ -1,0 +1,38 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Cadastro de Filmes";
+}
+
+<div class="container-fluid dashboard">
+    <h1 class="h2">Bem-vindo ao Cadastro de Filmes!</h1>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Seu conteúdo aqui -->
+            <!-- Adicione campos e lógica de cadastro, se necessário -->
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    Solicitar Ajuda
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Entre em contato com nossa equipe de suporte</h5>
+                    <p class="card-text">Problemas com o site? Deixe-nos saber!</p>
+                    <a asp-page="help" class="btn btn-success">Solicitar Ajuda</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    Solicitar Contato
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Entre em contato com nossa equipe de vendas</h5>
+                    <p class="card-text">Telefone: 29370863</p>
+                    <a asp-page="comercial/Index" class="btn btn-success">Solicitar Contato Comercial</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

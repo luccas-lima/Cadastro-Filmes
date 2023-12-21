@@ -1,0 +1,51 @@
+﻿@page "/Products/add"
+@model NerdCoffeeAdmin.Pages.Products.AddproductModel
+@{
+
+}
+
+<h1>Adionar Filmes</h1>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <form method="Post" enctype="multipart/form-data">
+
+            <div asp-validation-summary="All"></div>
+            <div class="mb-3">
+                <label asp-for="NewProduct.Name">Nome</label>
+                <input asp-for="NewProduct.Name" class="form-control" />
+                <span asp-validation-for="NewProduct.Name"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="NewProduct.ShortDescription">Short Description</label>
+                <input asp-for="NewProduct.ShortDescription" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="NewProduct.Description">Descrição</label>
+                <textarea asp-for="NewProduct.Description" class="form-control"></textarea>
+                <span asp-validation-for="NewProduct.Description" class="text-danger"></span>
+            </div>
+          
+            <div class="mb-3">
+                <label asp-for="NewProduct.Category">Categoria</label>
+                <select asp-for="NewProduct.Category" class="form-control">
+                    <option value="ação">Ação</option>
+                    <option value="Aventura">Aventura</option>
+                    <option value="Luta">Luta</option>
+                     <option value="FPS">FPS</option>
+                    <option value="RPG">RPG</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label asp-for="NewProduct.Upload">Image</label>
+                <input asp-for="NewProduct.Upload" class="form-control" />
+            </div>
+            <div class="mb-3">
+                <label asp-for="NewProduct.Upload">Upload</label>
+                <input asp-for="NewProduct.Upload" class="form-control" />
+            </div>
+            <button class="btn btn-success">Add</button>
+        </form>
+    </div>
+</div>
